@@ -7,7 +7,7 @@
   </div>
   <div>
     <h1>Vue Breakout</h1>
-    <h2>Aで左<br>Bで右<br>Rで最初から</h2>
+    <h2>Aで左<br>Dで右<br>Rで最初から</h2>
   </div>
 </template>
 
