@@ -2,7 +2,7 @@
   <div>
     <canvas ref="canvas" class="game-canvas" :width="background.width" :height="background.height"></canvas>
     <div v-if="game.lost || game.win" class="game-over-message">
-      {{ game.lost ? 'きぇぇぇぇぇ！Score: ' + game.score : 'ﾝﾆｬｺﾞｺﾞｺﾞｺﾞ!' }}
+      {{ game.lost ? 'GAMEOVER！Score: ' + game.score : 'CLEAR!' }}
     </div>
   </div>
   <div>
@@ -82,7 +82,7 @@ export default {
         ) {
 
           this.bricks.splice(i, 1);
-          this.game.score += 334;
+          this.game.score += 10;
           this.ball.speed.y = -this.ball.speed.y;
           this.checkWin();
           break;
